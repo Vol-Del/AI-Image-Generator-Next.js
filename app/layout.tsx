@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import React from "react";
+import {Toaster} from "@/components/ui/sonner";
 
 // const geistSans = Geist({
 //     variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
             className={`${font.className} bg-gray-900 antialiased`} suppressHydrationWarning={true}>
         <ResponsiveNav />
         {children}
+        <Toaster/>
         </body>
         </html>
     );
