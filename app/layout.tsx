@@ -4,6 +4,7 @@ import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import React from "react";
 import {Toaster} from "@/components/ui/sonner";
+import Footer from "@/components/Home/Footer/Footer";
 
 // const geistSans = Geist({
 //     variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
             className={`${font.className} bg-gray-900 antialiased`} suppressHydrationWarning={true}>
         <ResponsiveNav />
         {children}
+        <Footer/>
         <Toaster/>
         </body>
         </html>
