@@ -1,5 +1,6 @@
 import React from 'react'
 import {Check} from "lucide-react";
+import PriceCard from "@/components/Home/Price/PriceCard";
 
 const Price = () => {
     return (
@@ -25,6 +26,15 @@ const Price = () => {
                             <Check className="w-6 h-6 text-green-500"/>
                             <p className="text-lg text-white font-semibold text-opacity-60">Affordable rates</p>
                         </div>
+                    </div>
+                </div>
+                {/* Price Card */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <PriceCard price="4" user="1" type="Silver Pack"/>
+                    </div>
+                    <div>
+                        <PriceCard price="6" user="3" type="Gold Pack"/>
                     </div>
                 </div>
             </div>
